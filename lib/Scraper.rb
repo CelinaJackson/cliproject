@@ -3,17 +3,17 @@ require_relative "../lib/Flower.rb"
 require 'nokogiri'
 require 'open-uri'
 
-class Scraper
+class ScrapePage
 
-   def scrape
-    require 'nokogiri'
-    require 'open-uri'
+
+   def initialize
     
     site = "https://www.growerdirect.com/flower-varieties"
     
     page = Nokogiri::HTML(open(site))
     
-    flowers = page.css("h3.related-title a").text
+    name = page.css("h3.related-title a").text
+    flower_info = page.css("").text
    end
    
 end

@@ -13,7 +13,7 @@ class Flower
     end
 
     def self.find_by_name 
-        @@all.find {|ohioflower| ohioflower.name.downcase == name.downcase}
+        @@all.find {|flower| flower.name.downcase == name.downcase}
     end 
 
     def flower_info 

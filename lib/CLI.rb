@@ -2,7 +2,6 @@ class CLI
     def run 
         system("clear")
         @user_input = nil 
-        @scrape = Scraper.new 
         welcome 
 
         until @user_input == "4"
@@ -48,7 +47,7 @@ class CLI
     def search_flowers
         puts "What flower would you like to know about?"
         input = gets.chomp 
-        wildflower = @scrape.get_flower_by_name
+        wildflower = @scrape.search_flowers
         wildflower.flowerinfo 
     end
 end
