@@ -25,7 +25,7 @@ class CLI
         @user_input = gets.chomp 
 
         if @user_input == "1"
-            puts "This app shares basic info on some of the worlds most popular flowers!"
+            puts "This flower guide gives basic info on some of the worlds most popular flowers!"
         elsif @user_input == "2"
             get_flower_list
         elsif @user_input == "3"
@@ -38,10 +38,7 @@ class CLI
     end
 
     def get_flower_list
-        flowers = @scrape.getlist
-        flowers.each do |flower|
-            puts flower
-        end
+        @scrape.name
     end
 
     def search_flowers
