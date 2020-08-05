@@ -18,8 +18,8 @@ class CLI
     def main_menu 
         puts "Please choose one of the four menu options"
         puts "1. Learn more about this app"
-        puts "2. Search flowers"
-        puts "3. Get list of flowers"
+        puts "2. Get list of flowers"
+        puts "3. Search flowers"
         puts "4. Exit"
 
         @user_input = gets.chomp 
@@ -27,9 +27,9 @@ class CLI
         if @user_input == "1"
             puts "This app shares basic info on some of the worlds most popular flowers!"
         elsif @user_input == "2"
-            search_flowers
-        elsif @user_input == "3"
             get_flower_list
+        elsif @user_input == "3"
+            search_flowers
         elsif @user_input == "4"
             exit 
         else 
@@ -38,16 +38,16 @@ class CLI
     end
 
     def get_flower_list
-        wildflowers = @scrape.get_flower_list
-        wildflowers.each do |flowerinfo|
-            puts flowerinfo
+        flowers = @scrape.getlist
+        flowers.each do |flower|
+            puts flower
         end
     end
 
     def search_flowers
         puts "What flower would you like to know about?"
         input = gets.chomp 
-        wildflower = @scrape.search_flowers
-        wildflower.flowerinfo 
+        flower = @scrape.search_flowers_by_name
+        flower.flower_info 
     end
 end

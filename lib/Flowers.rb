@@ -19,7 +19,7 @@ class Flower
     def flower_info 
         puts @name 
         puts "\n"
-        puts "About the Flower:"
-        puts @flowerinfo
+        puts "About this Flower:"
+        puts @flower_info
     end 
 end
