@@ -12,11 +12,10 @@ class CLI
     end 
 
     def welcome 
-        puts "Welcome to the flower guide!"
+        puts "Welcome to the flower guide! What would you like to do?"
     end
 
     def main_menu 
-        puts "Please choose one of the four menu options"
         puts "1. Learn more about this app"
         puts "2. Get list of flowers"
         puts "3. Search flowers"
@@ -38,13 +37,12 @@ class CLI
     end
 
     def get_flower_list
-        @scrape.name
+        self.scrape.name
     end
 
     def search_flowers
         puts "What flower would you like to know about?"
         input = gets.chomp 
-        flower = @scrape.search_flowers_by_name
-        flower.flower_info 
+        input.flower_info
     end
 end

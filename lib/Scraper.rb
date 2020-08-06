@@ -14,12 +14,4 @@ class ScrapePage
       flower_info = page.css("div.related-summary p").text {|info| info = info.text}
    end 
    
-   def getlist 
-     
-   end 
    
-   def search_flowers_by_name(name)
-     
-   end 
-   
-end
