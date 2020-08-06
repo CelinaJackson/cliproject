@@ -11,8 +11,6 @@ class ScrapePage
 
     name = page.css("h3.related-title a").text
   
-    name.each.with_index(1) do |value, index|
-          puts "#{index}: #{value}"
     end 
   end
 
