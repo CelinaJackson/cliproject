@@ -37,7 +37,7 @@ class CLI
     end
 
     def get_flower_list
-        self.scrape.name
+        self.scrape_list
     end
 
     def search_flowers

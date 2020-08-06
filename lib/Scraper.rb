@@ -23,7 +23,7 @@ class ScrapePage
     flower_info = page.css("div.related-summary p").text
 
     flower_info.each do |i|
-      flower_info = i.text
+      puts i
     end 
   end
 end  
