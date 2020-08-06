@@ -9,20 +9,19 @@ class ScrapePage
     site = "https://www.growerdirect.com/flower-varieties/json"
     page = Nokogiri::HTML(open(site))
 
-    name = page.css("h3.related-title a").text
-  
-    end 
-  end
+    name = page.css("h3.related-title a").map do |flower| 
+    flower.text
+    end
+  end 
+
 
   def self.scrape_info 
     site = "https://www.growerdirect.com/flower-varieties/json"
     page = Nokogiri::HTML(open(site))
 
-    flower_info = page.css("div.related-summary p").text
-
-    flower_info.each do |i|
-      puts i
-    end 
+    flower_info = page.css("div.related-summary p").map do |info| 
+    info.text
   end
+
 end  
    
