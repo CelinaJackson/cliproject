@@ -40,6 +40,7 @@ class CLI
         self.scrape_list
         name.each.with_index(1) do |value, index|
           puts "#{index}: #{value}"
+        end
     end
 
     def search_flowers
