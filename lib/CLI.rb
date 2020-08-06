@@ -43,6 +43,6 @@ class CLI
     def search_flowers
         puts "What flower would you like to know about?"
         input = gets.chomp 
-        input.flower_info
+        return input.flower_info
     end
 end
