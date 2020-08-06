@@ -37,8 +37,7 @@ class CLI
     end
 
     def get_flower_list
-        self.scrape_list
-        name.each.with_index(1) do |value, index|
+        flower.each.with_index(1) do |value, index|
           puts "#{index}: #{value}"
         end
     end

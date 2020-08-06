@@ -5,7 +5,7 @@ require 'open-uri'
 
 class ScrapePage
 
-  def self.scrape_list
+  def scrape_list
     site = "https://www.growerdirect.com/flower-varieties/json"
     page = Nokogiri::HTML(open(site))
 
@@ -18,9 +18,10 @@ class ScrapePage
   def self.scrape_info 
     site = "https://www.growerdirect.com/flower-varieties/json"
     page = Nokogiri::HTML(open(site))
-
+    
     flower_info = page.css("div.related-summary p").map do |info| 
     info.text
+    end
   end
 
 end  
