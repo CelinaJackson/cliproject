@@ -2,6 +2,7 @@ class CLI
     def run 
         system("clear")
         @user_input = nil
+        @cli = CLI.new
         welcome 
 
         until @user_input == "4"
@@ -37,16 +38,14 @@ class CLI
     end
 
     def get_flower_list
-      name.each.with_index(1) do |value, index|
-        puts "#{index}: #{value}"
-  end
+      puts scrape_list
+    end
     end
 
     def search_flowers
         puts "What flower would you like to know about?"
         input = gets.chomp 
-        input.each do |input, info|
-          puts "#{input} :#{info}"
-        end
+        name = @cli.scrape_info(input)
+        name.flower_info
     end
 end
