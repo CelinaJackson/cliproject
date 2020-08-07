@@ -37,14 +37,14 @@ class CLI
     end
 
     def get_flower_list
-        flower.each.with_index(1) do |value, index|
-          puts "#{index}: #{value}"
-        end
+       scrape_info
     end
 
     def search_flowers
         puts "What flower would you like to know about?"
         input = gets.chomp 
-        return input.flower_info
+        input.each do |input, info|
+          puts "#{input} :#{info}"
+        end
     end
 end
