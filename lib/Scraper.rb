@@ -4,26 +4,27 @@ require_relative "../lib/CLI.rb"
 require 'nokogiri'
 require 'open-uri'
 
+class Scraper
+  
  def scrape_list
-site = "https://www.growerdirect.com/flower-varieties/json"
-page = Nokogiri::HTML(open(site))
-  name = page.css("h3.related-title a").map do |flower| 
+  site = "https://www.growerdirect.com/flower-varieties/json"
+  page = Nokogiri::HTML(open(site))
+  @name = page.css("h3.related-title a").map do |flower| 
     flower.text
   end
 
-  name.each.with_index(1) do |value, index|
-    puts "#{index}: #{value}"
-  end
+
 end 
 
 def scrape_info
-site = "https://www.growerdirect.com/flower-varieties/json"
-page = Nokogiri::HTML(open(site))
- flower_info = page.css("div.related-summary p").map do |info| 
+  site = "https://www.growerdirect.com/flower-varieties/json"
+  page = Nokogiri::HTML(open(site))
+  @flower_info = page.css("div.related-summary p").map do |info| 
     info.text
  end
 
- flower_info.each.with_index(1) do |value, index|
+  flower_info.each.with_index(1) do |value, index|
     puts "#{index}: #{value}"
  end
+end
 end

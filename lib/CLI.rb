@@ -1,7 +1,7 @@
 class CLI 
     def run 
         system("clear")
-        @user_input = nil 
+        @user_input = nil
         welcome 
 
         until @user_input == "4"
@@ -37,7 +37,9 @@ class CLI
     end
 
     def get_flower_list
-       
+      name.each.with_index(1) do |value, index|
+        puts "#{index}: #{value}"
+  end
     end
 
     def search_flowers
