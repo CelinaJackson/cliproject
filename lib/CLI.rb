@@ -46,7 +46,7 @@ class CLI
     def search_flowers
         puts "What flower would you like to know about?"
         input = gets.chomp 
-        name = @cli.scrape_info(input)
+        name = @cli.Scraper.scrape_info(input)
         name.flower_info
     end
 end
