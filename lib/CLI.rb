@@ -41,12 +41,17 @@ class CLI
     end
 
     def get_flower_list
-      puts Scraper.scrape_list
+      Scraper.scrape_list.each.with_index(1) do |value, index|
+       puts "#{index}: #{value}"
+      end
+      puts "What would you like to do next?"
     end
 
     def search_flowers
-        puts "What flower would you like to know about?"
+        puts "What flower would you like to know about? Enter the flower's corresponding number."
         @input = gets.chomp
-        Scraper.scrape_info 
+        Scraper.scrape_info.select.with_index(gets.chomp) do |value, index|
+          puts "#{index}: #{value}"
+        end
     end
 end
