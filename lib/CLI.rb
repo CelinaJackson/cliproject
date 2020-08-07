@@ -6,6 +6,7 @@ class CLI
         system("clear")
         @user_input = nil
         @cli = CLI.new
+        @input = nil
         welcome 
 
         until @user_input == "4"
@@ -50,8 +51,8 @@ class CLI
     def search_flowers
         puts "What flower would you like to know about? Enter the flower's corresponding number."
         @input = gets.chomp
-        Scraper.scrape_info.each.with_index(gets.chomp) do |value, index|
-          puts "#{index}: #{value}"
+          puts Scraper.scrape_info.each.with_index(@input) do |input, value|
+          puts "#{input} #{value}"
         end
         main_menu
     end
