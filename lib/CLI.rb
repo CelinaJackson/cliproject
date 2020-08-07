@@ -1,3 +1,5 @@
+require_relative "../lib/Scraper.rb" 
+
 class CLI 
     def run 
         system("clear")
@@ -38,7 +40,7 @@ class CLI
     end
 
     def get_flower_list
-      puts scrape_list
+      puts Scraper.scrape_list
     end
 
     def search_flowers
