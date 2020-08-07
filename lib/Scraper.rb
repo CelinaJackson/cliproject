@@ -3,7 +3,6 @@ require_relative "../lib/Flower.rb"
 require 'nokogiri'
 require 'open-uri'
 
-class ScrapePage
 
  def scrape_list
 site = "https://www.growerdirect.com/flower-varieties/json"
@@ -27,5 +26,4 @@ page = Nokogiri::HTML(open(site))
  flower_info.each.with_index(1) do |value, index|
     puts "#{index}: #{value}"
  end
-end
 end
