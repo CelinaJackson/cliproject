@@ -27,7 +27,7 @@ def self.scrape_info
   end
 
   flowerinfo.each.with_index(1) do |value, index|
-    puts "#{index}: #{value}"
+    puts "#{index}. #{value}"
   end
   
 end
