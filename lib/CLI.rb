@@ -40,7 +40,6 @@ class CLI
     def get_flower_list
       puts scrape_list
     end
-    end
 
     def search_flowers
         puts "What flower would you like to know about?"
