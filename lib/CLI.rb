@@ -1,4 +1,5 @@
 require_relative "../lib/Scraper.rb" 
+require_relative "../lib/Flowers.rb"
 
 class CLI 
     def run 
@@ -45,8 +46,7 @@ class CLI
 
     def search_flowers
         puts "What flower would you like to know about?"
-        input = gets.chomp 
-        name = @cli.Scraper.scrape_info(input)
-        name.flower_info
+        @input = gets.chomp
+        Scraper.scrape_info 
     end
 end

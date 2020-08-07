@@ -1,3 +1,6 @@
+require_relative "../lib/Scraper.rb"
+require_relative "../lib/CLI.rb"
+
 class Flower 
 
     attr_reader :name 
@@ -19,10 +22,9 @@ class Flower
     def save 
       @@all << self 
     end
+    
     def flower_info 
-        puts @name 
-        puts "\n"
         puts "About this Flower:"
-        puts @flower_info
+        puts @flowerinfo
     end 
 end
