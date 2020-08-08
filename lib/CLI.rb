@@ -1,7 +1,8 @@
 require_relative "../lib/Scraper.rb" 
 require_relative "../lib/Flowers.rb"
-
+require_relative "../lib/flowerhash.rb"
 class CLI 
+  
     def run 
         system("clear")
         @user_input = nil
@@ -47,13 +48,14 @@ class CLI
       end
       puts "What would you like to do next?"
     end
-
+    
     def search_flowers
-        puts "What flower would you like to know about? Enter the flower's corresponding number."
-        @input = gets.chomp
-          puts Scraper.scrape_info.each.with_index(@input) do |input, value|
-          puts "#{input} #{value}"
+        puts "What flower would you like to know about?"
+        flowername = gets.chomp
+        flowername.each do |key, value|
+          if key.to_s == flowername
+            puts "#{value}"
         end
-        main_menu
     end
-end
+end 
+ end
