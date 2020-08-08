@@ -52,7 +52,7 @@ class CLI
     def search_flowers
         puts "What flower would you like to know about?"
         flowername = gets.chomp
-        flowername.each do |key, value|
+        flower_hash.each do |key, value|
           if key.to_s == flowername
             puts "#{value}"
         end

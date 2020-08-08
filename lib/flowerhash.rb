@@ -1,5 +1,7 @@
 require_relative "../lib/CLI.rb"
-flowername = {
+def flower_hash
+  
+flowerhash = {
   
 Agapanthus: "Agapanthus is known as the Flower of Love, the name comes from the Greek word agape, meaning love & anthos, meaning flower. It has spectacular funnel-shaped florets in a round cluster that is 10 to 15 cm (4 to 6inches) across. This is a true focal flower.", 
 Alstroemeria: "Symbolic of wealth, prosperity and fortune, the flower of friendship. Did you know that the Alstroemeria (known as Peruvian Lily and Lily of the Incas) are members of the Amaryllis family? Alstroemeria stems grow from rhizomes (underground stems) that are", 
@@ -57,3 +59,4 @@ Violet: "February's FlowerViolets are a flexible flower! Widely cultivated for t
 Zinnia: "Zinnia is genus of 20 species of annual and perennial plants from the Asteraceae family. Originally from Mexico, Zinnias were found in area from the American Southwest to South America. They are notable for their single long stemmed flowers in a variety o"
  
  }
+ end
