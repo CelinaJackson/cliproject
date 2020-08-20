@@ -31,7 +31,7 @@ class CLI
         @user_input = gets.chomp 
 
         if @user_input == "1"
-            puts "You can use this library to find out a\nlittle about each flower on the list! \n\n What would you like to do next?"
+            puts "You can use this library to find out a\nlittle about each flower on the list!\n\nWhat would you like to do next?"
         elsif @user_input == "2"
             get_flower_list
         elsif @user_input == "3"
@@ -60,7 +60,6 @@ class CLI
           if key.to_s == flowername
             puts "\n\n#{value}\n\n" 
           end
-           puts "What would you like to do next?\n"
         end
     end 
  end
