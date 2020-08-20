@@ -1,6 +1,7 @@
 require_relative "../lib/Scraper.rb" 
 require_relative "../lib/Flowers.rb"
 require_relative "../lib/flowerhash.rb"
+
 class CLI 
   
     def run 
@@ -13,8 +14,6 @@ class CLI
         until @user_input == "4"
             main_menu
         end 
-
-        puts "Thanks for visiting!"
     end 
 
     def welcome 
@@ -32,7 +31,7 @@ class CLI
         @user_input = gets.chomp 
 
         if @user_input == "1"
-            puts "You can use this library to find out a\nlittle about each flower on the list! \n"
+            puts "You can use this library to find out a\nlittle about each flower on the list! \n\n What would you like to do next?"
         elsif @user_input == "2"
             get_flower_list
         elsif @user_input == "3"
@@ -59,8 +58,9 @@ class CLI
         flowername = gets.chomp
         flower_hash.each do |key, value|
           if key.to_s == flowername
-            puts "\n\n#{value}\n \n" 
+            puts "\n\n#{value}\n\n" 
+          end
+           puts "What would you like to do next?\n"
         end
-    end
-end 
+    end 
  end

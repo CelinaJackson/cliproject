@@ -23,8 +23,4 @@ class Flower
       @@all << self 
     end
     
-    def flower_info 
-        puts "About this Flower:"
-        puts @flowerinfo
-    end 
 end
