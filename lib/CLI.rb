@@ -1,13 +1,8 @@
-require_relative "../lib/Scraper.rb" 
-require_relative "../lib/Flowers.rb"
-require_relative "../lib/flowerhash.rb"
-
 class CLI 
   
     def run 
         system("clear")
         @user_input = nil
-        @cli = CLI.new
         welcome 
 
         until @user_input == "4"

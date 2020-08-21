@@ -1,5 +1,3 @@
-require_relative "../lib/CLI.rb"
-
 def flower_hash
   
 flowerhash = {

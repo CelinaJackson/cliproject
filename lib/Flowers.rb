@@ -1,6 +1,3 @@
-require_relative "../lib/Scraper.rb"
-require_relative "../lib/CLI.rb"
-
 class Flower 
 
   attr_reader :name 
