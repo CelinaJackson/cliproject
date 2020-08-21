@@ -8,7 +8,6 @@ class CLI
         system("clear")
         @user_input = nil
         @cli = CLI.new
-        @input = nil
         welcome 
 
         until @user_input == "4"
