@@ -55,9 +55,9 @@ Statice: "The Greek word Statice means 'causing to stand' as the spikes stand fr
 Stock: "STOCK (Matthida) With all the natural charm of an English country garden, the bountiful blooms of stock have an enticing spicy-sweet fragrance. Double or single flower spikes are surrounded by slender silver-green foliage.", 
 Sunflowers: "SUN FLOWERS (Helianthus annuus) Signify pure thoughts, adoration and dedication or dedicated love. Sunflowers are native to the mid-west and western part of the USA. The name derives from the Greek words Helios, meaning sun and anthos, meaning flower.", 
 Tulips: "TULIPS (too-lips) Tulipa - This goblet-shaped bloom of six petals is Holland's most popular flower. There are literally thousands of cultivars with various shapes and colors, including multi-color and bi-color varieties.", 
-SweetPea: "April's Flower: The Sweet Pea, incredibly fragrant, delicate and beautiful! Symbolizes departure after having had a good time and can also indicate delicate pleasure and bliss. An annual plant, mostly known as a climber but is available in low spreaders", 
-Violet: "February's FlowerViolets are a flexible flower! Widely cultivated for thousands of years they are used for eating and medicine; as well as a beautiful house plant for decoration! Their scientific name is Viola spp from the family Violaceae.", 
-Zinnia: "Zinnia is genus of 20 species of annual and perennial plants from the Asteraceae family. Originally from Mexico, Zinnias were found in area from the American Southwest to South America. They are notable for their single long stemmed flowers in a variety o"
+SweetPea: "April's Flower: The Sweet Pea, incredibly fragrant, delicate and beautiful! Symbolizes departure after having had a good time and can also indicate delicate pleasure and bliss.", 
+Violet: "February's Flower, Violets are a flexible flower! Widely cultivated for thousands of years they are used for eating and medicine; as well as a beautiful house plant for decoration! Their scientific name is Viola spp from the family Violaceae.", 
+Zinnia: "Zinnia is genus of 20 species of annual and perennial plants from the Asteraceae family. Originally from Mexico, Zinnias were found in area from the American Southwest to South America. They are notable for their single long stemmed flowers in a variety of vivid colours."
  
  }
  end
