@@ -39,7 +39,7 @@ class CLI
 
     def get_flower_list
       Scraper.scrape_list.each.with_index(1) do |value, index|
-       puts "#{index}. #{value}"
+       puts "#{index}. #{value.name}"
       end
       puts "\n"
       puts "Here is the list!"

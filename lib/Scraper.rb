@@ -3,7 +3,7 @@ class Scraper
      site = "https://www.growerdirect.com/flower-varieties/json"
      page = Nokogiri::HTML(open(site))
      name = page.css("h3.related-title a").map do |flower| 
-      flower.text
+     Flower.new(flower.text)
      end
    end 
 end
