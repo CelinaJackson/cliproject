@@ -50,7 +50,7 @@ class CLI
     def search_flowers
         puts "What flower would you like to know about?\nMake sure to spell names as they appear on the list, and use\ncamel spacing when necessary(i.e. 'Violet' or 'LilyOfTheValley').\n"
         flowername = gets.chomp
-        flower_hash.each do |key, value|
+        flowers.each do |key, value|
           if key.to_s == flowername
             puts "\n\n#{value}\n\n" 
           end

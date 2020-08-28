@@ -1,6 +1,7 @@
 class Flower 
 
   attr_reader :name 
+  
   @@all = [ ]
 
   def initialize(name)
@@ -19,5 +20,9 @@ class Flower
   def save 
     @@all << self 
   end
+  
+  def self.sort_by_name
+    Flower.all.sort_by {|flower| flower.name}
+  end 
     
 end
